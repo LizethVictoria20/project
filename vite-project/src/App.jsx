@@ -1,11 +1,10 @@
-
-import './App.css'
-
+import './App.css';
+import Home from './components/Home/Home.jsx';
 function App() {
 
   return (
     <>
-     <p className="text-red-500">Holis</p>
+     <Home />
     </>
   )
 }
