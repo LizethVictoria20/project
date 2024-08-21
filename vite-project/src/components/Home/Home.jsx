@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import './Home.css';
+import Logo from '../../assets/logoE.png'
 
 const navigation = [
   { name: 'Sobre Nosotros', href: '#' },
@@ -77,13 +78,13 @@ function Home() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="max-w-2xl sm:pt-28 sm:pb-44">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
-          <div className="text-start">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <div className="text-start pl-16">
+            <h1 className="font-bold tracking-tight text-gray-900 title-header">
               Soluciones y Eficiencia
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 w-9/12">
             Brindamos soluciones tecnológicas y sistemas para llevar al máximo la eficiencia en tu empresa / marca
             </p>
             <div className="mt-10 flex items-center justify-start gap-x-6">
@@ -99,7 +100,6 @@ function Home() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )
