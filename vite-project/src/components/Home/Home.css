@@ -1,3 +1,11 @@
 .container-header {
   background-image: linear-gradient(to right top, #1e43c4, #475ece, #6678d6, #8392dc, #a1ade2, #b2bbe6, #c2caea, #d3d8ed, #d9ddf1, #dee3f5, #e4e8fa, #eaeefe);
 }
+
+.button-little_menu {
+  background: #CBD1E7;
+}
+
+.title-header {
+  font-size: 6rem;
+}
