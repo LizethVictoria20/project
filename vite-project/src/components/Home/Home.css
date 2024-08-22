@@ -9,3 +9,7 @@
 .title-header {
   font-size: 6rem;
 }
+
+.top-torus {
+  transform: rotate(93deg);
+}

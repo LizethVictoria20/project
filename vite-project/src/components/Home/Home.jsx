@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import './Home.css';
-import Logo from '../../assets/logoE.png'
+import Cylinder from '../../assets/cylinder.svg';
+import HalfTorus from '../../assets/halftorus.svg';
+
 
 const navigation = [
   { name: 'Sobre Nosotros', href: '#' },
@@ -78,19 +80,25 @@ function Home() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="max-w-2xl sm:pt-28 sm:pb-44">
+        <div className="sm:pt-56 sm:pb-44 m-auto">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
-          <div className="text-start pl-16">
-            <h1 className="font-bold tracking-tight text-gray-900 title-header">
+          <div className="relative">
+            <img src={HalfTorus} alt="" className="absolute bottom-[-9rem] top-torus" />
+          </div>
+          <div className="text-center">
+            <h1 className="font-bold tracking-tight text-gray-900 title-header relative z-10">
               Soluciones y Eficiencia
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 w-9/12">
-            Brindamos soluciones tecnológicas y sistemas para llevar al máximo la eficiencia en tu empresa / marca
+            <div className="relative">
+              <img src={Cylinder} alt="" className="absolute left-[72rem] bottom-[3rem]" />
+            </div>
+            <p className="mt-6 leading-8 text-gray-600 w-[32rem] m-auto text-2xl">
+            Brindamos soluciones tecnológicas y sistemas para llevar al máximo la eficiencia en tu empresa.
             </p>
-            <div className="mt-10 flex items-center justify-start gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-black px-3.5 py-2.5 text-sm text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-black px-3.5 py-2.5 text-sm text-white shadow-sm hover:text-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Contáctanos
               </a>
@@ -100,6 +108,9 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="relative">
+        <img src={HalfTorus} alt="" className="absolute left-[60rem] bottom-[-9rem]" />
       </div>
     </div>
   )
