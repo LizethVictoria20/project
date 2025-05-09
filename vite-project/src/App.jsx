@@ -1,11 +1,13 @@
-
-import './App.css'
-
+import './App.css';
+import Home from './components/Home/Home.jsx';
+import Contact from './components/Contact/Contact.jsx';
 function App() {
 
   return (
     <>
-     <p className="text-red-500">Holis</p>
+      <Home />
+
+      <Contact />
     </>
   )
 }
